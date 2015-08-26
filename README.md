@@ -1,2 +1,3 @@
-# react-svg-icon
-SVG Icon component for React
+# React SVG Icon
+
+React SVG icon component
