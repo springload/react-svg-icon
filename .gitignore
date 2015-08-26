@@ -1,0 +1,4 @@
+examples/**/*-bundle.js
+node_modules/
+build
+.idea/

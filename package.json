@@ -1,0 +1,36 @@
+{
+  "name": "react-svg-icon",
+  "version": "0.0.1",
+  "description": "React SVG icon component",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/springload/react-svg-icon.git"
+  },
+  "homepage": "https://github.com/springload/react-svg-icon",
+  "bugs": "https://github.com/springload/react-svg-icon/issues",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "rackt test --single-run --browsers Firefox",
+    "start": "rackt server"
+  },
+  "authors": [
+    "Thomas Winter"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "rackt-cli": "^0.4.0",
+    "react": "^0.13.3"
+  },
+  "peerDependencies": {
+    "react": "^0.13.3"
+  },
+  "tags": [
+    "react", "svg", "icon"
+  ],
+  "keywords": [
+    "react", "svg", "icon"
+  ]
+}
