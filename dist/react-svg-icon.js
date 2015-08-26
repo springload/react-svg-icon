@@ -91,19 +91,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	    propTypes: {
 	        name: _react2['default'].PropTypes.string.isRequired,
-	        cssClass: _react2['default'].PropTypes.string
+	        className: _react2['default'].PropTypes.string
 	    },
 	
 	    render: function render() {
 	
 	        var useTag = '<use xlink:href="#i-' + this.props.name + '" />';
 	
-	        var cssClass = ['i'];
-	        if (this.props.cssClass) {
-	            cssClass.push(this.props.cssClass);
+	        var className = ['i'];
+	        if (this.props.className) {
+	            className.push(this.props.className);
 	        }
 	
-	        return _react2['default'].createElement('svg', { className: cssClass.join(" "), dangerouslySetInnerHTML: { __html: useTag } });
+	        return _react2['default'].createElement('svg', { className: className.join(" "), dangerouslySetInnerHTML: { __html: useTag } });
 	    }
 	
 	});

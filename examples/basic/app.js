@@ -6,7 +6,7 @@ let App = React.createClass({
         return (
             <div className="example">
                 <h1>React SVG icon example</h1>
-                <Icon name="rocket" cssClass="i--red" />
+                <Icon name="rocket" className="i--red" />
             </div>
         );
     }

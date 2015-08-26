@@ -13,6 +13,6 @@ import Icon from 'react-svg-icon';
 
 <Icon
     name='icon-name'
-    cssClass='icon-class'
+    className='icon-class'
 />
 ```
