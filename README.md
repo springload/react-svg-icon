@@ -1,4 +1,4 @@
-# React SVG Icon
+# React SVG Icon [![npm](https://img.shields.io/npm/v/react-svg-icon.svg?style=flat-square)](https://www.npmjs.com/package/react-svg-icon)
 
 React SVG icon component
 
