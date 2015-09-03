@@ -1,6 +1,6 @@
 {
   "name": "react-svg-icon",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "React SVG icon component",
   "main": "./lib/index",
   "repository": {
@@ -28,9 +28,13 @@
     "react": "^0.13.3"
   },
   "tags": [
-    "react", "svg", "icon"
+    "react",
+    "svg",
+    "icon"
   ],
   "keywords": [
-    "react", "svg", "icon"
+    "react",
+    "svg",
+    "icon"
   ]
 }

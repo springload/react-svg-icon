@@ -76,7 +76,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	'use strict';
 	
 	Object.defineProperty(exports, '__esModule', {
-	    value: true
+	  value: true
 	});
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -87,24 +87,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	exports['default'] = _react2['default'].createClass({
 	
-	    displayName: 'Icon',
+	  displayName: 'Icon',
 	
-	    propTypes: {
-	        name: _react2['default'].PropTypes.string.isRequired,
-	        className: _react2['default'].PropTypes.string
-	    },
+	  propTypes: {
+	    name: _react2['default'].PropTypes.string.isRequired,
+	    className: _react2['default'].PropTypes.string
+	  },
 	
-	    render: function render() {
+	  render: function render() {
+	    var useTag = '<use xlink:href="#i-' + this.props.name + '" />';
 	
-	        var useTag = '<use xlink:href="#i-' + this.props.name + '" />';
-	
-	        var className = ['i'];
-	        if (this.props.className) {
-	            className.push(this.props.className);
-	        }
-	
-	        return _react2['default'].createElement('svg', { className: className.join(" "), dangerouslySetInnerHTML: { __html: useTag } });
+	    var className = ['i'];
+	    if (this.props.className) {
+	      className.push(this.props.className);
 	    }
+	
+	    return _react2['default'].createElement('svg', { className: className.join(' '), dangerouslySetInnerHTML: { __html: useTag } });
+	  }
 	
 	});
 	module.exports = exports['default'];
