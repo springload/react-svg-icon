@@ -1,4 +1,4 @@
-# React SVG Icon
+# React SVG Icon [![npm](https://img.shields.io/npm/v/react-svg-icon.svg?style=flat-square)](https://www.npmjs.com/package/react-svg-icon)
 
 React SVG icon component
 
@@ -8,7 +8,7 @@ Create your SVG sprite and inline them at the start of you HTML document. There'
 
 ## Include your icon component
 
-```
+```js
 import Icon from 'react-svg-icon';
 
 <Icon
