@@ -1,12 +1,12 @@
 {
   "name": "react-svg-icon",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/springload/react-svg-icon",
   "authors": [
     "Thomas Winter"
   ],
   "description": "React SVG icon component",
-  "main": "dist/Icon.js",
+  "main": "dist/react-svg-icon.js",
   "keywords": [
     "react",
     "svg",
