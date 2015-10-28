@@ -95,14 +95,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	
 	  render: function render() {
-	    var useTag = '<use xlink:href="#i-' + this.props.name + '" />';
-	
 	    var className = ['i'];
 	    if (this.props.className) {
 	      className.push(this.props.className);
 	    }
 	
-	    return _react2['default'].createElement('svg', { className: className.join(' '), dangerouslySetInnerHTML: { __html: useTag } });
+	    return _react2['default'].createElement(
+	      'svg',
+	      { className: className.join(' ') },
+	      _react2['default'].createElement('use', { xlinkHref: '#i-' + this.props.name })
+	    );
 	  }
 	
 	});
