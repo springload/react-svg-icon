@@ -1,6 +1,6 @@
 {
   "name": "react-svg-icon",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "React SVG icon component",
   "main": "./lib/index",
   "repository": {
@@ -22,10 +22,10 @@
   "license": "MIT",
   "devDependencies": {
     "rackt-cli": "^0.4.0",
-    "react": "^0.13.3"
+    "react": "^0.14.0"
   },
   "peerDependencies": {
-    "react": "^0.13.3"
+    "react": "^0.14.0"
   },
   "tags": [
     "react",
