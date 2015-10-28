@@ -16,3 +16,7 @@ import Icon from 'react-svg-icon';
     className='icon-class'
 />
 ```
+
+## Demo
+
+You can find examples here: https://springload.github.io/react-svg-icon/
