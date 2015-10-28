@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from '../../lib/index';
+import ReactDOM from 'react-dom';
 
 let App = React.createClass({
     render() {
@@ -12,4 +13,4 @@ let App = React.createClass({
     }
 });
 
-React.render(<App/>, document.getElementById('container'));
+ReactDOM.render(<App/>, document.getElementById('container'));
