@@ -17,6 +17,6 @@ import Icon from 'react-svg-icon';
 />
 ```
 
-## Demo
+## Example
 
-You can find examples here: https://springload.github.io/react-svg-icon/
+You can find example here: https://springload.github.io/react-svg-icon/
