@@ -1,0 +1,24 @@
+body {
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 200;
+}
+
+.example {
+  padding: 0 25px;
+}
+
+.i {
+    width: 96px;
+    height: 96px;
+}
+.i--blue {
+    fill: #0000CC;
+}
+.i--white {
+    fill: #FFFFFF;
+    border: 1px solid #000000;
+}
+.i--red {
+    fill: #cc0000;
+}
