@@ -15,3 +15,7 @@ body {
 .i--red {
     fill: #cc0000;
 }
+
+.footer-menu {
+    padding: 25px 25px;
+}

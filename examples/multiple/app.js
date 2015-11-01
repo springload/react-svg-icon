@@ -8,8 +8,8 @@ const App = React.createClass({
       <div className="example">
         <h1>Multiple React SVG icon example</h1>
         <Icon name="pacman" className="i--blue" />
-        <Icon name="connection" className="i--white" />
-        <Icon name="database" className="i--red" />
+        <Icon name="bug" className="i--white middle-icon" />
+        <Icon name="happy" className="i--red" />
       </div>
     );
   }
