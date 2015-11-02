@@ -8,9 +8,12 @@ Create your SVG sprite and inline them at the start of you HTML document. There'
 
 ## Commands
 
-`npm install` install npm modules
+`npm install` install node dependencies
+
 `npm start` run server
+
 `npm test` run tests
+
 
 ## Include your icon component
 
