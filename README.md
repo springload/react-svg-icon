@@ -8,11 +8,14 @@ Create your SVG sprite and inline them at the start of you HTML document. There'
 
 ## Commands
 
-`npm install` install node dependencies
+You need `rackt-cli v0.5.3` to execute some these commands.
 
-`npm start` run server
-
-`npm test` run tests
+- `npm install` install node dependencies
+- `npm start` run server
+- `npm test` run tests
+- `npm build` build component
+- `npm publish` publish component to npm (verify versions in package.json and bower.json)
+- `rackt pages` rebuild gh-pages branch
 
 
 ## Include your icon component
