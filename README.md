@@ -1,4 +1,4 @@
-# React SVG Icon [![npm](https://img.shields.io/npm/v/react-svg-icon.svg?style=flat-square)](https://www.npmjs.com/package/react-svg-icon) [![Build Status](https://travis-ci.org/springload/react-svg-icon.svg?branch=master)](https://travis-ci.org/springload/react-svg-icon)
+# React SVG Icon [![npm](https://img.shields.io/npm/v/react-svg-icon.svg?style=flat-square)](https://www.npmjs.com/package/react-svg-icon) [![Build Status](https://travis-ci.org/springload/react-svg-icon.svg?branch=master)](https://travis-ci.org/springload/react-svg-icon) [![devDependency Status](https://david-dm.org/springload/react-svg-icon/dev-status.svg)](https://david-dm.org/springload/react-svg-icon#info=devDependencies)
 
 React SVG icon component
 
