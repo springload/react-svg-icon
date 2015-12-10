@@ -17,7 +17,9 @@
     "start": "rackt server"
   },
   "authors": [
-    "Thomas Winter"
+    "Thomas Winter",
+    "Vincent Audebert",
+    "Thibaud Colas"
   ],
   "license": "MIT",
   "devDependencies": {
