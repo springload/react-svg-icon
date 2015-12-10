@@ -8,7 +8,7 @@ Create your SVG sprite and inline them at the start of you HTML document. There'
 
 ## Commands
 
-You need `rackt-cli v0.5.3` to execute some these commands.
+You need `rackt-cli v0.5.3` to execute some of these commands.
 
 - `npm install` install node dependencies
 - `npm start` run server
@@ -31,4 +31,4 @@ import Icon from 'react-svg-icon';
 
 ## Example
 
-You can find example here: https://springload.github.io/react-svg-icon/
+You can find an example here: https://springload.github.io/react-svg-icon/
