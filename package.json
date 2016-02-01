@@ -24,10 +24,8 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "babel-eslint": "^4.1.6",
     "chai": "^3.4.0",
-    "eslint": "^1.8.0",
-    "eslint-config-airbnb": "^0.1.0",
-    "eslint-plugin-react": "^3.6.3",
     "jsdom": "^7.0.2",
     "mocha": "^2.3.3",
     "rackt-cli": "^0.5.3",

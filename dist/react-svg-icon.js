@@ -60,12 +60,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
 	
 	var _componentsIcon = __webpack_require__(1);
 	
 	var _componentsIcon2 = _interopRequireDefault(_componentsIcon);
-
+	
 	exports['default'] = _componentsIcon2['default'];
 	module.exports = exports['default'];
 
@@ -79,7 +81,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { 'default': obj };
+	}
 	
 	var _react = __webpack_require__(2);
 	
@@ -100,11 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      className.push(this.props.className);
 	    }
 	
-	    return _react2['default'].createElement(
-	      'svg',
-	      { className: className.join(' ') },
-	      _react2['default'].createElement('use', { xlinkHref: '#i-' + this.props.name })
-	    );
+	    return _react2['default'].createElement('svg', { className: className.join(' ') }, _react2['default'].createElement('use', { xlinkHref: '#i-' + this.props.name }));
 	  }
 	
 	});
