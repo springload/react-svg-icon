@@ -1,6 +1,6 @@
 import React from 'react';
-import Icon from '../../lib/index';
 import ReactDOM from 'react-dom';
+import Icon from '../../lib/index';
 
 const App = React.createClass({
   render() {

@@ -1,6 +1,6 @@
 import React from 'react';
-import Icon from '../../lib/index';
 import ReactDOM from 'react-dom';
+import Icon from '../../lib/index';
 
 const App = React.createClass({
   render() {
@@ -10,6 +10,11 @@ const App = React.createClass({
         <Icon name="pacman" className="i--blue" />
         <Icon name="bug" className="i--white middle-icon" />
         <Icon name="happy" className="i--red" />
+
+        <h2>SVG icon in an accessible button</h2>
+        <a href="#" className="btn" role="button" tabIndex="0">
+          <Icon name="rocket" title="Rocket" />
+        </a>
       </div>
     );
   }
