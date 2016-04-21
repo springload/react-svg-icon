@@ -30,7 +30,7 @@
     "mocha": "^2.3.3",
     "rackt-cli": "^0.5.3",
     "react": "^15.0.1",
-    "react-addons-test-utils": "^0.14.1",
+    "react-addons-test-utils": "^15.0.1",
     "react-dom": "^15.0.1"
   },
   "peerDependencies": {
@@ -45,6 +45,7 @@
     "react",
     "react-component",
     "svg",
-    "icon"
+    "icon",
+    "icons"
   ]
 }
