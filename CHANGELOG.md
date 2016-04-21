@@ -1,12 +1,19 @@
-v0.3.0 - Thu, 21 Apr 2016 06:01:35 GMT
+v1.0.0 - Thu, 21 Apr 2016 06:22:27 GMT
 --------------------------------------
 
 - 
 
 
+v0.3.0 - Thu, 21 Apr 2016 06:01:35 GMT
+--------------------------------------
+
 # Change Log
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
+
+##[1.0.0]
+
+First official stable release!
 
 ##[0.3.0]
 ### Added
