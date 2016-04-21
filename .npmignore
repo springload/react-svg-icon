@@ -1,5 +1,16 @@
 **/.*
 **/__tests__
 examples
+CHANGELOG.md
 CONTRIBUTING.md
 bower.json
+
+
+.editorconfig
+.gitattributes
+.gitignore
+.eslintrc
+.eslintignore
+.npmignore
+.travis.yml
+.nvmrc
