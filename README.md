@@ -14,7 +14,6 @@ You need `rackt-cli v0.5.3` to execute some of these commands.
 - `npm start` run server
 - `npm test` run tests
 - `npm build` build component
-- `npm publish` publish component to npm (verify versions in package.json and bower.json)
 - `rackt pages` rebuild gh-pages branch
 
 
@@ -23,12 +22,17 @@ You need `rackt-cli v0.5.3` to execute some of these commands.
 ```js
 import Icon from 'react-svg-icon';
 
-<Icon
-    name='icon-name'
-    className='icon-class'
-/>
+<Icon name='icon-name' className='icon-class' />
 ```
 
 ## Example
 
 You can find an example here: https://springload.github.io/react-svg-icon/
+
+## Contributing
+
+Have a look at [our contribution guidelines](CONTRIBUTING.md).
+
+### Releasing a new version
+
+Use `rackt release`
