@@ -1,8 +1,21 @@
+v0.3.0 - Thu, 21 Apr 2016 06:01:35 GMT
+--------------------------------------
+
+- 
+
+
 # Change Log
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+##[0.3.0]
+### Added
+- Support React 15
+
+### Changed
+- Change package path to `dist` file
+
+## [0.2.3]
 ### Added
 - Proper index.html for gh-pages
 - Travis integration
