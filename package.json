@@ -2,7 +2,7 @@
   "name": "react-svg-icon",
   "version": "0.2.3",
   "description": "React SVG icon component",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/springload/react-svg-icon.git"
