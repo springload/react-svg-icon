@@ -60,14 +60,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	
-	function _interopRequireDefault(obj) {
-	  return obj && obj.__esModule ? obj : { 'default': obj };
-	}
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
 	var _componentsIcon = __webpack_require__(1);
 	
 	var _componentsIcon2 = _interopRequireDefault(_componentsIcon);
-	
+
 	exports['default'] = _componentsIcon2['default'];
 	module.exports = exports['default'];
 
@@ -81,9 +79,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	
-	function _interopRequireDefault(obj) {
-	  return obj && obj.__esModule ? obj : { 'default': obj };
-	}
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
 	var _react = __webpack_require__(2);
 	
@@ -95,16 +91,31 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	  propTypes: {
 	    name: _react2['default'].PropTypes.string.isRequired,
+	    title: _react2['default'].PropTypes.string,
 	    className: _react2['default'].PropTypes.string
 	  },
 	
 	  render: function render() {
-	    var className = ['i'];
-	    if (this.props.className) {
-	      className.push(this.props.className);
+	    var _props = this.props;
+	    var name = _props.name;
+	    var title = _props.title;
+	    var className = _props.className;
+	
+	    var classNames = ['i'];
+	    if (className) {
+	      classNames.push(className);
 	    }
 	
-	    return _react2['default'].createElement('svg', { className: className.join(' ') }, _react2['default'].createElement('use', { xlinkHref: '#i-' + this.props.name }));
+	    return _react2['default'].createElement(
+	      'svg',
+	      { className: classNames.join(' '), 'aria-labelledby': title ? 'svgtitle_' + name : null },
+	      title ? _react2['default'].createElement(
+	        'title',
+	        { id: 'svgtitle_' + name },
+	        title
+	      ) : null,
+	      _react2['default'].createElement('use', { xlinkHref: '#i-' + name })
+	    );
 	  }
 	
 	});
