@@ -1,10 +1,13 @@
 language: node_js
 node_js:
-- '4'
+- '4.2'
 before_script:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
-script: npm test
+- npm install -g rackt-cli@0.5.4
+script:
+- npm run lint
+- npm run test
 notifications:
   email: false
   slack:

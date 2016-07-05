@@ -1,10 +1,7 @@
 **/.*
 **/__tests__
+lib/components/__tests__
 examples
-CHANGELOG.md
-CONTRIBUTING.md
-bower.json
-
 
 .editorconfig
 .gitattributes
@@ -14,3 +11,6 @@ bower.json
 .npmignore
 .travis.yml
 .nvmrc
+
+CHANGELOG.md
+server.js

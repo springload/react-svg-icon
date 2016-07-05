@@ -13,9 +13,12 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "rackt test --single-run --browsers Firefox",
+    "test": "export RACKT_PATH=./node_modules/rackt-cli; ./node_modules/rackt-cli/node_modules/.bin/karma start ./node_modules/rackt-cli/karma.conf.js --single-run --browsers Firefox",
     "start": "rackt server",
-    "build": "rackt build"
+    "build": "rackt build",
+    "linter:js": "eslint",
+    "lint:js": "npm run linter:js -s -- .",
+    "lint": "npm run lint:js -s"
   },
   "authors": [
     "Thomas Winter",
@@ -24,22 +27,26 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.9.2",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.2",
+    "mocha": "^2.5.3",
     "rackt-cli": "^0.5.4",
-    "react": "^15.0.1",
-    "react-addons-test-utils": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "react": "^15.2.0",
+    "react-addons-test-utils": "^15.2.0",
+    "react-dom": "^15.2.0"
   },
   "peerDependencies": {
     "react": "^0.14.7 || ^15.0.1"
   },
-  "tags": [
-    "react",
-    "svg",
-    "icon"
-  ],
   "keywords": [
+    "reactjs",
     "react",
     "react-component",
+    "component",
     "svg",
     "icon",
     "icons"

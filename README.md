@@ -1,41 +1,45 @@
-# React SVG Icon [![npm](https://img.shields.io/npm/v/react-svg-icon.svg?style=flat-square)](https://www.npmjs.com/package/react-svg-icon) [![Build Status](https://travis-ci.org/springload/react-svg-icon.svg?branch=master)](https://travis-ci.org/springload/react-svg-icon) [![devDependency Status](https://david-dm.org/springload/react-svg-icon/dev-status.svg)](https://david-dm.org/springload/react-svg-icon#info=devDependencies)
+[react-svg-icon](https://springload.github.io/react-svg-icon/) [![npm](https://img.shields.io/npm/v/react-svg-icon.svg?style=flat-square)](https://www.npmjs.com/package/react-svg-icon) [![Build Status](https://travis-ci.org/springload/react-svg-icon.svg?branch=master)](https://travis-ci.org/springload/react-svg-icon) [![devDependency Status](https://david-dm.org/springload/react-svg-icon/dev-status.svg)](https://david-dm.org/springload/react-svg-icon#info=devDependencies)
+=====================
 
-React SVG icon component
+> SVG icon component for React. [Demo](https://springload.github.io/react-svg-icon/)
 
 ## Inline SVG assets
 
-Create your SVG sprite and inline them at the start of you HTML document. There's a nice tutorial on how to do this on [CSS-Tricks](https://css-tricks.com/svg-sprites-use-better-icon-fonts/)
+Create your SVG sprite and inline them at the start of you HTML document. There's a nice tutorial on how to do this on [CSS-Tricks](https://css-tricks.com/svg-sprites-use-better-icon-fonts/).
 
-## Commands
+## Installation
 
-You need `rackt-cli v0.5.3` to execute some of these commands.
+`npm install --save react-svg-icon`
 
-- `npm install` install node dependencies
-- `npm start` run server
-- `npm test` run tests
-- `npm build` build component
-- `rackt pages` rebuild gh-pages branch
+## Usage
 
-
-## Include your icon component
-
-```js
+```jsx
 import Icon from 'react-svg-icon';
 
-<Icon name='icon-name' className='icon-class' />
+<Icon name='icon-name' className='optional-class' />
+
+// Optionally, use a title to add an accessible label
+<Icon name='icon-name' title="Icon label" />
 ```
-
-## Example
-
-You can find an example here: https://springload.github.io/react-svg-icon/
 
 ## Contributing
 
-Have a look at [our contribution guidelines](CONTRIBUTING.md).
+### Install / useful commands
 
-### Releasing a new version
+You need `npm install -g rackt-cli@0.5.4` to execute some of these commands.
 
-Use `rackt release`
+- `npm install` install node dependencies
+- `npm run start` run server
+- `npm run test` run tests
+- `npm run build` build component
+- `npm run lint` lint the JS code
+- `rackt release` publish component to npm (verify version in package.json)
+- `rackt pages` rebuild gh-pages branch
+
+### Guidelines
+
+- Use pull requests to collaborate around new changes
+- Document changes in the project's [CHANGELOG](CHANGELOG.md)
 
 ## LICENSE
 
