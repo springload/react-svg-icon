@@ -1,15 +1,14 @@
-v1.0.0 - Thu, 21 Apr 2016 06:22:27 GMT
---------------------------------------
-
-- 
-
-
-v0.3.0 - Thu, 21 Apr 2016 06:01:35 GMT
---------------------------------------
-
 # Change Log
+
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
+
+## [[v2.0.0]](https://github.com/springload/react-simpler-select/releases/tag/v2.0.0) - 2016-07-05
+
+### Changed
+
+- Tested with React 15.2
+- Now a stateless component (breaking change if there was a ref on it)
 
 ##[1.0.0]
 
