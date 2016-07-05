@@ -85,40 +85,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	exports['default'] = _react2['default'].createClass({
+	var Icon = function Icon(_ref) {
+	  var name = _ref.name;
+	  var title = _ref.title;
+	  var className = _ref.className;
+	  return _react2['default'].createElement(
+	    'svg',
+	    { className: 'i ' + (className || ''), 'aria-labelledby': title ? 'svgtitle_' + name : null },
+	    title ? _react2['default'].createElement(
+	      'title',
+	      { id: 'svgtitle_' + name },
+	      title
+	    ) : null,
+	    _react2['default'].createElement('use', { xlinkHref: '#i-' + name })
+	  );
+	};
 	
-	  displayName: 'Icon',
+	Icon.propTypes = {
+	  name: _react2['default'].PropTypes.string.isRequired,
+	  title: _react2['default'].PropTypes.string,
+	  className: _react2['default'].PropTypes.string
+	};
 	
-	  propTypes: {
-	    name: _react2['default'].PropTypes.string.isRequired,
-	    title: _react2['default'].PropTypes.string,
-	    className: _react2['default'].PropTypes.string
-	  },
-	
-	  render: function render() {
-	    var _props = this.props;
-	    var name = _props.name;
-	    var title = _props.title;
-	    var className = _props.className;
-	
-	    var classNames = ['i'];
-	    if (className) {
-	      classNames.push(className);
-	    }
-	
-	    return _react2['default'].createElement(
-	      'svg',
-	      { className: classNames.join(' '), 'aria-labelledby': title ? 'svgtitle_' + name : null },
-	      title ? _react2['default'].createElement(
-	        'title',
-	        { id: 'svgtitle_' + name },
-	        title
-	      ) : null,
-	      _react2['default'].createElement('use', { xlinkHref: '#i-' + name })
-	    );
-	  }
-	
-	});
+	exports['default'] = Icon;
 	module.exports = exports['default'];
 
 /***/ },
