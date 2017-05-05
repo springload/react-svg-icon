@@ -1,14 +1,19 @@
+sudo: false
 language: node_js
+cache:
+  directories:
+  - node_modules
 node_js:
-- '4.2'
-before_script:
-- export DISPLAY=:99.0
-- sh -e /etc/init.d/xvfb start
-- npm install -g rackt-cli@0.5.4
+- 6
 script:
-- npm run lint
-- npm run test
+- npm run test:ci
+after_success:
+- npm run coveralls
+branches:
+  except:
+  - gh-pages
 notifications:
   email: false
   slack:
-    secure: qnJgJ3mwYwMago/GszclznZYE7CkQD96fox6ppZufYCf7MyZKZEx/ODKueFsxa2Oh/LUADRZMdMZt1GAFWoBFhuGl03PziDFpLfD53uQGPPXSLOiYQUXbDjciVNdOU7W0uzBOmVz75QW74o2UY38dGpF+kQ2nfoiGGOPmdbeo9hy+A/nLumzxDg/gDb1ZOPUv4VP/VmLSHwJYea88RZfykBz19fEFwtmjV7HM0k5lJ6ctnzAf4cVvRYZgoIVlLTPkDiqzCyTFy3BZ9H+9ZdbQ3VGm8bnv5pSvhXC1ucarKoKnpdjP4ghJ/4TW0lFX6rl97QA9q06/1b6SYgPJxV/GD+aPXwW0oXE9wQBjPD0ifHzYY6OIOysjzMqT3J/9PwhTt27fhwvUlrRDrezHl6nPOlbuoqyeA6TVuau0WbG0pLm093yfgszVn/VPgpoeXDJi6rt3Z1RVsftjiw23W89vQl4Yu3i6Qcz9mvVQw3XC6VOkWzuSQRCQ0TO6ZT7NilLiyIl3tgauhfvwg4RC4NJSleeguI3hEPtWZC1pqn41wVGlawN7xp2G2BohSm2AxeKxh4Pi5jzj72vOa+bUTTf2zKJ01nU38rmMxaqa2qopeRYa9jGV14FrkkOj3R7gOhrVO+sJdtfboKVZjomyPduGEkx9aWnc63E5XE5PkXv9GM=
+    rooms:
+      secure: b1bt6GNVx5ELffGrFn+KiJ+1yZH58rULx+UE9hWhTZ4+R2+E5ASkDYAV7bDa8UN/4FMrsNSYCHioIIN+eGwB3sMDd/oW/aUQhxmVOM3586EpYMEtwnEmPYdmekX3KxyIzFoeB5uE9KZ0Bul/Pd5yOv4a7PzHLIf501gITyPLyKt85HG+yGle10w+UeSdsvbhkpJZSihV1xfS2eev19e7BQCAlRB1yLYymvYX9u9bCXsrguQyEO3S6LWTYggJfxRjdu6Jo31tRzT9q9Wy/qYAn2WuKR9Dt8k7J/wLFC5p66kzRY8xoononwaDjqTlzJ0yG6PvXdUCtfQrMJ89DegguYcAScK3b7Nlx5kcB57Qoh/OER8lpRsVwdFWnpffkAIAj5CsdBHpKBcVh90CRdEb+Q6JvbAnDDhE4cvhqtpsnU+iBKc/mmlhEsqi/k9hKerOlhRvzHXmrvDdPCQAAuY9phRzGG3lJ6ofZVdL8pivZS/A6kkj10BbWUEOJhWyxoNjgHqdBt7clyJf/duV0dD7umsk83J6I+IChZvZEXzsDEtmWWfVfQD9cWD/hWVnCHqnkC3Yp2DUxVQeim/yvU/69lgnxyWxl2r5GT9wPkm1Nsk8EJdnf/hYQUmuNA9WymxcA+czGAwXYwVeGP8U5kQ0PtrkGc8/syX1s6xFbsKjX2g=

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon #className 1`] = `
+<svg
+  aria-hidden={true}
+  className="i i--red"
+>
+  <use
+    aria-hidden={null}
+    xlinkHref="#i-rocket"
+  />
+</svg>
+`;
+
+exports[`Icon #title 1`] = `
+<svg
+  aria-hidden={null}
+  className="i "
+>
+  <title>
+    Test title
+  </title>
+  <use
+    aria-hidden={true}
+    xlinkHref="#i-rocket"
+  />
+</svg>
+`;
+
+exports[`Icon renders 1`] = `
+<svg
+  aria-hidden={true}
+  className="i "
+>
+  <use
+    aria-hidden={null}
+    xlinkHref="#i-rocket"
+  />
+</svg>
+`;

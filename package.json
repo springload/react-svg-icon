@@ -1,54 +1,96 @@
 {
   "name": "react-svg-icon",
-  "version": "2.0.0",
-  "description": "SVG icon component for React",
-  "main": "./lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/springload/react-svg-icon.git"
-  },
-  "homepage": "https://github.com/springload/react-svg-icon",
-  "bugs": "https://github.com/springload/react-svg-icon/issues",
-  "directories": {
-    "example": "examples"
-  },
-  "scripts": {
-    "test": "export RACKT_PATH=./node_modules/rackt-cli; ./node_modules/rackt-cli/node_modules/.bin/karma start ./node_modules/rackt-cli/karma.conf.js --single-run --browsers Firefox",
-    "start": "rackt server",
-    "build": "rackt build",
-    "linter:js": "eslint",
-    "lint:js": "npm run linter:js -s -- .",
-    "lint": "npm run lint:js -s"
-  },
-  "authors": [
-    "Thomas Winter",
-    "Vincent Audebert",
-    "Thibaud Colas"
-  ],
+  "version": "3.0.0",
+  "description": "Accessible SVG icon component for React",
+  "main": "./dist/index.js",
+  "author": "Springload",
   "license": "MIT",
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "^2.13.1",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-import": "^1.9.2",
-    "eslint-plugin-jsx-a11y": "^1.5.3",
-    "eslint-plugin-react": "^5.2.2",
-    "mocha": "^2.5.3",
-    "rackt-cli": "^0.5.4",
-    "react": "^15.2.0",
-    "react-addons-test-utils": "^15.2.0",
-    "react-dom": "^15.2.0"
-  },
-  "peerDependencies": {
-    "react": "^0.14.3 || ^15.0.0"
-  },
+  "homepage": "https://springload.github.io/react-svg-icon/",
+  "bugs": "https://github.com/springload/react-svg-icon/issues",
   "keywords": [
     "reactjs",
     "react",
     "react-component",
     "component",
+    "accessible",
+    "a11y",
     "svg",
     "icon",
     "icons"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/springload/react-svg-icon.git"
+  },
+  "eslintConfig": {
+    "extends": "springload"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/",
+      "/pages/",
+      "/examples/test.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "> 1%",
+              "IE 11"
+            ]
+          }
+        }
+      ],
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.16.0",
+    "coveralls": "^2.11.15",
+    "enzyme": "^2.8.2",
+    "enzyme-to-json": "^1.5.1",
+    "eslint": "^3.19.0",
+    "eslint-config-springload": "1.0.2",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "3.0.2",
+    "eslint-plugin-react": "6.10.3",
+    "jest": "^19.0.2",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-test-renderer": "^15.5.4",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.8",
+    "react": "^0.14.9 || ^15.3.0",
+    "react-dom": "^0.14.9 || ^15.3.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config=webpack/webpack.config.dev.js",
+    "js": "babel -d dist lib",
+    "dist": "npm run js -s",
+    "linter:js": "eslint",
+    "lint": "npm run linter:js -s -- .",
+    "test": "jest",
+    "test:watch": "jest --watch --coverage",
+    "test:coverage": "jest --coverage",
+    "test:ci": "npm run lint -s && npm run test:coverage -s && npm run dist -s && npm run pages -s",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "pages": "rm -rf pages && cp -R examples pages && webpack --config=webpack/webpack.config.prod.js",
+    "deploy": "./bin/deploy.sh"
+  }
 }
