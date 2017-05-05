@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [[v3.0.0]](https://github.com/springload/react-svg-icon/releases/tag/v3.0.0)
+
 ### Changed
 
 - Convert all code to be compatible with React 15.5.
