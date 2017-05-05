@@ -1,6 +1,6 @@
 {
   "name": "react-svg-icon",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Accessible SVG icon component for React",
   "main": "./dist/index.js",
   "author": "Springload",
