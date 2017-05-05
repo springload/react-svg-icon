@@ -13,10 +13,10 @@ npm install --save react-svg-icon
 ```jsx
 import Icon from 'react-svg-icon';
 
-<Icon name="rocket" />
-<Icon name="rocket" className="i--red" />
+<Icon name="i-rocket" />
+<Icon name="i-rocket" className="i--red" />
 // Optionally, use a title to add an accessible label
-<Icon name="rocket" title="Start the trip" />
+<Icon name="i-rocket" title="Start the trip" />
 ```
 
 ### Inline SVG assets

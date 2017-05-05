@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [[v4.0.0]](https://github.com/springload/react-svg-icon/releases/tag/v4.0.0)
+
+- No longer adding `i-` prefix in front of href references.
+
 ## [[v3.0.0]](https://github.com/springload/react-svg-icon/releases/tag/v3.0.0)
 
 ### Changed

@@ -4,9 +4,9 @@ import Icon from '../lib/index';
 
 const App = () => (
     <div>
-        <Icon name="rocket" />
-        <Icon name="rocket" className="i--red" />
-        <Icon name="rocket" title="Start the trip" />
+        <Icon name="i-rocket" />
+        <Icon name="i-rocket" className="i--red" />
+        <Icon name="i-rocket" title="Start the trip" />
     </div>
 );
 
