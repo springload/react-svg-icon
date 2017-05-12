@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [[v4.0.1]](https://github.com/springload/react-svg-icon/releases/tag/v4.0.1)
+
+- Add peerDependencies compatibility for React 16.
+
 ## [[v4.0.0]](https://github.com/springload/react-svg-icon/releases/tag/v4.0.0)
 
 - No longer adding `i-` prefix in front of href references.
